@@ -4,8 +4,8 @@ const requestHandler = (request, response) => {
     console.log(request.url);
     response.end('Hello Node.js Server!');
 };
-const server = http.createServer(requestHandler);
-server.listen(port, (err) => {
+const index = http.createServer(requestHandler);
+index.listen(port, (err) => {
     if (err) {
         return console.log('something bad happened', err);
     }

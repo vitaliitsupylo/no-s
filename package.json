@@ -2,22 +2,13 @@
   "name": "no-s",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": "10.15.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vitaliitsupylo/no-s.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vitaliitsupylo/no-s/issues"
-  },
-  "homepage": "https://github.com/vitaliitsupylo/no-s#readme"
+  "license": "ISC"
 }
