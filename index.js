@@ -1,13 +1,11 @@
-const http = require('http');
-const port = 3000;
-const requestHandler = (request, response) => {
-    console.log(request.url);
-    response.end('Hello Node.js Server!');
-};
-const index = http.createServer(requestHandler);
-index.listen(port, (err) => {
-    if (err) {
-        return console.log('something bad happened', err);
-    }
-    console.log(`server is listening on ${port}`);
+const Koa = require('koa');
+const app = new Koa();
+const serve = require('koa-static');
+
+app.use(serve(__dirname + '/public'));
+
+app.use(async ctx => {
+    ctx.body = 'Hello World';
 });
+
+app.listen(3000);
